@@ -1,1 +1,3 @@
 **Beeps?
+
+Uses the `wavefile` gem

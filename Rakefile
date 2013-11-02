@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-SineGen::Application.load_tasks
+Beepbeep::Application.load_tasks

@@ -1,12 +1,11 @@
 source 'https://rubygems.org'
-ruby '1.9.3'
 
 gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+gem 'pg'
 
 gem 'wavefile'
 
@@ -38,7 +37,3 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
-
-
-gem 'pry'
-gem 'pry-nav'
