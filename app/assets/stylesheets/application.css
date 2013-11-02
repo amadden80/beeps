@@ -11,3 +11,11 @@
  *= require_self
  *= require_tree .
  */
+
+th {
+	background-color: lightblue;
+}
+
+td {
+	background-color: lightgrey;
+}
