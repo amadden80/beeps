@@ -1,6 +1,6 @@
-**Beeps?
+==Beeps?
 
 Uses the `wavefile` gem
 
-(http://beepbeep.herokuapp.com/)[http://beepbeep.herokuapp.com/]
+http://beepbeep.herokuapp.com/
 
