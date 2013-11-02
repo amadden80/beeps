@@ -1,0 +1,31 @@
+
+
+<h1>Want a beep?</h1>
+
+
+<table border="1">
+	<thead>
+		<th>frequency</th>
+		<th>fs</th>
+		<th>seconds</th>
+		<th>amplitude</th>
+		<th>phase</th>
+		<th>audio</th>
+	</thead>
+	<tbody>
+		<% @demos.each do |demo| %>
+			<tr>
+				<td><%= demo[:frequency] %></td>
+				<td><%= demo[:fs] %></td>
+				<td><%= demo[:seconds] %></td>
+				<td><%= demo[:amplitude] %></td>
+				<td><%= demo[:phase] %></td>
+				<td>
+					<audio controls >
+						<source src='<%= "/sine?frequency=#{demo[:frequency]}&fs=#{demo[:fs]}&seconds=#{demo[:seconds]}&amplitude=#{demo[:amplitude]}=phase=#{demo[:phase]}" %>' />
+					</audio>
+				</td>
+			</tr>
+		<% end %>
+	</tbody>
+</table>
