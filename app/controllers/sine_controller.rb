@@ -9,6 +9,7 @@ class SineController < ApplicationController
 				  	{frequency: 880,  fs: 8000, seconds: 2, amplitude: 0.75, phase: 0},
 				  	{frequency: 1760, fs: 8000, seconds: 1, amplitude: 0.75, phase: 0}
 				 ]
+
 	end
 
 	def sine
@@ -48,7 +49,6 @@ class SineController < ApplicationController
 			end
 
 			# Wavefile Gen
-
 	      	format = WaveFile::Format.new(:mono, :pcm_16, srate)
 	      	writer = WaveFile::Writer.new(path, format)
 	      	buffer = WaveFile::Buffer.new(wave, WaveFile::Format.new(:mono, :float, srate))
